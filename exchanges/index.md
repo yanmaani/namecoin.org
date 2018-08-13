@@ -29,11 +29,9 @@ title: Exchanges
 
 <span style="font-size:85%;">
 **Basic level exchanges**<br>
-[247exchange](https://www.247exchange.com/)<br>
 [24change](https://24change.com)<br>
-[Bter](https://bter.com)<br>
+[AltCoinTrader](https://www.altcointrader.co.za/nmc)<br>
 [bx.in.th](https://bx.in.th)<br>
-[ExchangeMyCoins](https://www.exchangemycoins.com/)<br>
 [Livecoin](https://www.livecoin.net/)<br>
 [Poloniex](https://poloniex.com)<br>
 [ShapeShift](https://shapeshift.io/)<br>
