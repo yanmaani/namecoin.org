@@ -67,11 +67,11 @@ Electrum-NMC is the Namecoin port of the lightweight Bitcoin wallet Electrum.
 
 [Preliminary Electrum-NMC documentation is here.]({{site.baseurl}}docs/electrum-nmc/)
 
-* [Electrum-NMC v3.3.3.1 for GNU/Linux](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1/Electrum-NMC-3.3.3.1.tar.gz)
-* [Electrum-NMC v3.3.3.1 for Windows (Standalone)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1/electrum-nmc-nc3.3.3.1.exe)
-* [Electrum-NMC v3.3.3.1 for Windows (Portable)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1/electrum-nmc-nc3.3.3.1-portable.exe)
-* [Electrum-NMC v3.3.3.1 for Windows (Installer)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1/electrum-nmc-nc3.3.3.1-setup.exe)
-* [Electrum-NMC v3.3.3.1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1/SHA256SUMS.asc)
+* [Electrum-NMC v3.3.3.1.1 for GNU/Linux](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1.1/Electrum-NMC-3.3.3.1.1.tar.gz)
+* [Electrum-NMC v3.3.3.1.1 for Windows (Standalone)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1.1/electrum-nmc-nc3.3.3.1.1.exe)
+* [Electrum-NMC v3.3.3.1.1 for Windows (Portable)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1.1/electrum-nmc-nc3.3.3.1.1-portable.exe)
+* [Electrum-NMC v3.3.3.1.1 for Windows (Installer)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1.1/electrum-nmc-nc3.3.3.1.1-setup.exe)
+* [Electrum-NMC v3.3.3.1.1 Signature (Release signed by Jeremy Rand)](https://www.namecoin.org/files/electrum-nmc/electrum-nmc-3.3.3.1.1/SHA256SUMS.asc)
 * [Electrum-NMC source code](https://github.com/namecoin/electrum-nmc/)
 
 ### Known Issues
@@ -156,7 +156,7 @@ See the [Namecoin Tor resolution documentation]({{site.baseurl}}docs/tor-resolut
 * dns-prop279 doesn't properly return error codes; all errors will be treated as `NXDOMAIN`.
 * dns-prop279 hasn't been carefully checked for proxy leaks.
 * Using dns-prop279 will make you stand out from other Tor users.
-* Stream isolation for streams opened by applications (e.g. Tor Browser) should work fine.  However, stream isolation metadata won't propagate to streams opened by the DNS server.  That means you should only use `dns-prop279` with a DNS server that will not generate outgoing traffic when you query it.  ncdns is probably fine as long as it's using a full-block-receive Namecoin node such as Namecoin Core or libdohj-namecoin in leveldbtxcache mode.  Unbound is not a good idea.
+* Stream isolation for streams opened by applications (e.g. Tor Browser) should work fine.  However, stream isolation metadata won't propagate to streams opened by the DNS server.  That means you should only use `dns-prop279` with a DNS server that will not generate outgoing traffic when you query it.  ncdns is probably fine as long as it's using a full-block-receive Namecoin node such as Namecoin Core or libdohj-namecoin in leveldbtxcache mode.  ncdns should **not** be used with headers-only name lookup clients such as Electrum-NMC.  Unbound is also not a good idea.
 * Nothing in dns-prop279 prevents the configured DNS server from caching lookups. If lookups are cached, this could be used to fingerprint users. ncdns has caching enabled by default.
 * DNSSEC support hasn't been tested at all, and is probably totally unsafe right now. Only use dns-prop279 when you fully trust the configured DNS server and your network path to it.
 * Build is not yet reproducible.
