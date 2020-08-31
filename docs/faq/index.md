@@ -183,7 +183,8 @@ This makes it possible to give human-meaningful names to Tor Onion Services.
 Right now, blockchain-based systems like Namecoin are less secure against impersonation and deanonymization attacks than systems like Onion Service names, used directly, are.
 However, Namecoin's human-meaningful names protect against phishing attacks better; it's much easier to remember a meaningful name than an arbitrary public key.
 
-We believe that both systems serve a useful purpose. To determine whether it's more secure for you to directly use Onion Service names or to point a Namecoin name to your Onion Service, you have to consider your threat model individually.
+We believe that both systems serve a useful purpose.
+To determine whether it's more secure for you to directly use Onion Service names or to point a Namecoin name to your Onion Service, you have to consider your threat model individually.
 
 ### How does Namecoin compare to Let's Encrypt?
 
