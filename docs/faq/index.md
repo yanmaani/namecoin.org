@@ -188,7 +188,7 @@ Let's Encrypt also has the ability to censor your ability to receive TLS certifi
 
 > The People’s Republic of Donetsk is on the U.S. Treasury Department Specially Designated Nationals list. The website you are inquiring about appears to be a part of, or a state enterprise of, the People’s Republic of Donetsk, thus we cannot provide service according to U.S. law.
 
-Let’s Encrypt are also routinely compelled to censor news websites.  For example, on January 2, 2019, Let's Encrypt [revoked the TLS certificate for such a website that was funded by Russian entities](https://www.mcclatchydc.com/news/policy/technology/cyber-security/article223832790.html), owing to the U.S. Department of the Treasury [alleging it](https://home.treasury.gov/news/press-releases/sm577) to have "engaged in efforts to post content focused on divisive political issues" and "attempted to hold a political rally in the United States".
+Let's Encrypt is also routinely compelled to censor news websites.  For example, on January 2, 2019, Let's Encrypt [revoked the TLS certificate for such a website that was funded by Russian entities](https://www.mcclatchydc.com/news/policy/technology/cyber-security/article223832790.html), owing to the U.S. Department of the Treasury [alleging it](https://home.treasury.gov/news/press-releases/sm577) to have "engaged in efforts to post content focused on divisive political issues" and "attempted to hold a political rally in the United States".
 
 [ISRG executive director Josh Aas stated](https://community.letsencrypt.org/t/according-to-mcclatchydc-com-lets-encrypt-revoqued-and-banned-usareally-com/81517/10) on January 4, 2019, that "This happens to maybe one domain per month".
 
